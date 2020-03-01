@@ -1,0 +1,56 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: arial;
+}
+
+#text{
+	margin-left: 50px;
+	margin-top: 50px;
+	position: relative;
+	font-size: 28px;
+	opacity: 0;
+	transition: 0.5s linear;
+}
+
+#text.show{
+	opacity: 1;
+}
+
+#frame{
+	margin-left: 50px;
+	margin-top: 50px;
+	position: relative;
+}
+
+#player{
+	position:absolute;
+	z-index: 10;
+	transition:0.3s linear;
+	top: 0;
+	left: 0;
+}
+
+.blok{
+	width: 100px;
+	height: 171px;
+	display: inline-block;
+	margin-top: -44px;
+	position:relative;
+	margin-bottom: -44px;
+}
+
+.object{
+	position:absolute;
+	top: -44px;
+	opacity: 1;
+	transition:1.2s ease;
+	transition-delay: 0.3s;
+	transform: rotateY(0) scale(1);
+}
+
+.object.hidden{
+	transform: rotateY(720deg) scale(0.1);
+	opacity: 0;
+	top:-88px;
+}
